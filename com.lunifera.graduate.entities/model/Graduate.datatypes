@@ -1,0 +1,11 @@
+package com.lunifera.graduate.datatypes {
+
+	datatype String jvmType String;
+	datatype long jvmType Long as primitive;
+	datatype boolean jvmType Boolean as primitive;
+	datatype double jvmType Double as primitive;
+
+	datatype Date dateType date;
+	datatype Timestamp dateType timestamp;
+
+}

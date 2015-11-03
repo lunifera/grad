@@ -1,0 +1,12 @@
+package com.lunifera.graduate.dtos {
+	
+	/* Imports the required artifacts */
+	import com.lunifera.graduate.dtos.*;
+	import com.lunifera.graduate.dtos.mapper.*;
+	import com.lunifera.graduate.entities.*;
+
+
+	autoDto BaseDto wraps Base {
+	}
+	
+}

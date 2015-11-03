@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<types:LCommonModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.lunifera.org/dsl/common/types/v1" xmlns:types_1="http://www.eclipse.org/xtext/common/JavaVMTypes">
+  <packages name="com.lunifera.graduate.datatypes">
+    <types xsi:type="types:LDataType" name="String">
+      <jvmTypeReference xsi:type="types_1:JvmParameterizedTypeReference">
+        <type xsi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.String#java.lang.String"/>
+      </jvmTypeReference>
+    </types>
+    <types xsi:type="types:LDataType" name="long" asPrimitive="true">
+      <jvmTypeReference xsi:type="types_1:JvmParameterizedTypeReference">
+        <type xsi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Long#java.lang.Long"/>
+      </jvmTypeReference>
+    </types>
+    <types xsi:type="types:LDataType" name="boolean" asPrimitive="true">
+      <jvmTypeReference xsi:type="types_1:JvmParameterizedTypeReference">
+        <type xsi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Boolean#java.lang.Boolean"/>
+      </jvmTypeReference>
+    </types>
+    <types xsi:type="types:LDataType" name="double" asPrimitive="true">
+      <jvmTypeReference xsi:type="types_1:JvmParameterizedTypeReference">
+        <type xsi:type="types_1:JvmGenericType" href="java:/Objects/java.lang.Double#java.lang.Double"/>
+      </jvmTypeReference>
+    </types>
+    <types xsi:type="types:LDataType" name="Date" date="true"/>
+    <types xsi:type="types:LDataType" name="Timestamp" date="true" dateType="TIMESTAMP"/>
+  </packages>
+</types:LCommonModel>

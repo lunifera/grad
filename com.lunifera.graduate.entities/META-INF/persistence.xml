@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="graduate" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<non-jta-data-source>osgi:service/GraduateDs</non-jta-data-source>
+		<class>com.lunifera.graduate.entities.Address</class>
+		<class>com.lunifera.graduate.entities.Auditor</class>
+		<class>com.lunifera.graduate.entities.Base</class>
+		<class>com.lunifera.graduate.entities.Country</class>
+		<class>com.lunifera.graduate.entities.Degree</class>
+		<class>com.lunifera.graduate.entities.Dissertation</class>
+		<class>com.lunifera.graduate.entities.Division</class>
+		<class>com.lunifera.graduate.entities.Gender</class>
+		<class>com.lunifera.graduate.entities.Grading</class>
+		<class>com.lunifera.graduate.entities.NumberedEntity</class>
+		<class>com.lunifera.graduate.entities.Person</class>
+		<class>com.lunifera.graduate.entities.Student</class>
+		<class>com.lunifera.graduate.entities.SubjectOfStudy</class>
+		<class>com.lunifera.graduate.entities.Title</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<!-- <property name="eclipselink.target-database" value="Derby" /> -->
+			<!-- <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" 
+				/> -->
+			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:derby:carstoreDB;create=true" 
+				/> -->
+			<!-- <property name="javax.persistence.jdbc.user" value="app" /> -->
+			<!-- <property name="javax.persistence.jdbc.password" value="app" /> -->
+
+			<!-- <property name="eclipselink.target-server" -->
+			<!-- value="org.lunifera.runtime.eclipselink.core.fragment.LuniferaPlatform" 
+				/> -->
+
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.timestamp" value="false" />
+			<property name="eclipselink.logging.thread" value="false" />
+			<property name="eclipselink.logging.exceptions" value="true" />
+			<property name="eclipselink.orm.throw.exceptions" value="true" />
+			<property name="eclipselink.jdbc.read-connections.min"
+				value="1" />
+			<property name="eclipselink.jdbc.write-connections.min"
+				value="1" />
+
+			<!-- EclipseLink should create the database schema automatically -->
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
+			<property name="eclipselink.create-ddl-jdbc-file-name"
+				value="createDDL_ddlGeneration.jdbc" />
+			<property name="eclipselink.drop-ddl-jdbc-file-name" value="dropDDL_ddlGeneration.jdbc" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="both" />
+
+			<property name="eclipselink.weaving" value="static" />
+			<!-- Enable this property in development mode if you want dynamic weaving! -->
+			<!-- <property name="eclipselink.weaving" value="true" /> -->
+
+		</properties>
+	</persistence-unit>
+</persistence>

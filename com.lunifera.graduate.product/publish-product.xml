@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Publish the product for download" default="main">
+	<target name="main">
+		<echo>Publishing products to ${product.targetFolder}</echo>
+
+		<copy todir="${product.targetFolder}">
+			<fileset dir="${basedir}/target/products/">
+				<include name="*.zip" />
+				<exclude name="org.lunifera.samples.carstore.product.CarstoreProduct/**" />
+			</fileset>
+		</copy>
+	</target>
+</project>

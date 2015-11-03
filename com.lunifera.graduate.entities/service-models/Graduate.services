@@ -1,0 +1,7 @@
+package com.lunifera.graduate.dtos.services {
+	
+	/* Imports the original entity and dto package */
+	import com.lunifera.graduate.dtos.*;
+	import com.lunifera.graduate.dtos.dtos.*; 
+	
+}

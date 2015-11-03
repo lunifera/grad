@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;PAPER_WIDTH&quot;:768,&quot;PAPER_HEIGHT&quot;:727,&quot;PAPER_SCROLL_LEFT&quot;:2012,&quot;PAPER_SCROLL_TOP&quot;:2099,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src&quot;,&quot;THEME&quot;:&quot;org_design01&quot;}">
+  <meta charset="UTF-8" name="package-mapping" content="grad:com.lunifera.graduate.ui.fields">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-full="true"> 
+   <vaadin-tab-sheet size-full="true" _id="masterTabSheet"> 
+    <tab caption="Basics" selected="true"> 
+     <vaadin-horizontal-layout spacing="true" size-full="true" margin="true"> 
+      <vaadin-form-layout> 
+       <vaadin-text-field null-representation="" caption="Number" _id="number"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="LFP" _id="lfp"></vaadin-text-field> 
+       <grad-title-field null-representation="" caption="Title" _id="title"></grad-title-field> 
+       <vaadin-text-field null-representation="" caption="Firstname 1" _id="firstname"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Firstname 2" _id="firstname2"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Family Name" _id="nastname"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Birth Name" _id="birthname"></vaadin-text-field> 
+       <vaadin-option-group caption="Sex" item-caption-mode="id" _id="gender"> 
+        <option>MALE</option> 
+        <option>FEMALE</option> 
+       </vaadin-option-group> 
+       <vaadin-text-field null-representation="" caption="Phone" _id="phone"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Cell Phone" _id="cellPhone"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Mail Address" _id="mailAddress"></vaadin-text-field> 
+      </vaadin-form-layout> 
+      <vaadin-form-layout> 
+       <vaadin-text-area caption="Description"></vaadin-text-area> 
+       <vaadin-text-field null-representation="" caption="Birthday" _id="birthday"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Birthplace" _id="birthplace"></vaadin-text-field> 
+       <grad-country-field caption="Birthcountry" _id="birthcountry"></grad-country-field> 
+       <grad-division-field caption="Divison" _id="division"></grad-division-field> 
+      </vaadin-form-layout> 
+     </vaadin-horizontal-layout> 
+    </tab> 
+    <tab caption="Address"> 
+     <vaadin-horizontal-layout spacing="true" size-full="true" margin="true"> 
+      <vaadin-form-layout> 
+       <vaadin-label size-auto="true" plain-text="">
+         Home Address 
+       </vaadin-label> 
+       <vaadin-text-field null-representation="" caption="Street" _id="homeAddress_street"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Postal Code" _id="homeAddress_postalcode"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="City" _id="homeAddress_city"></vaadin-text-field> 
+      </vaadin-form-layout> 
+      <vaadin-form-layout> 
+       <vaadin-label size-auto="true" plain-text="">
+         Student Address 
+       </vaadin-label> 
+       <vaadin-text-field null-representation="" caption="Street" _id="semesterAddress_street"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="Postal Code" _id="semesterAddress_postalcode"></vaadin-text-field> 
+       <vaadin-text-field null-representation="" caption="City" _id="semesterAddress_city"></vaadin-text-field> 
+      </vaadin-form-layout> 
+     </vaadin-horizontal-layout> 
+    </tab> 
+   </vaadin-tab-sheet> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

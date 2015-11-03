@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dto:LDtoModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dto="http://www.lunifera.org/dsl/dto/v1">
+  <packages name="com.lunifera.graduate.dtos">
+    <imports importedNamespace="com.lunifera.graduate.dtos.*"/>
+    <imports importedNamespace="com.lunifera.graduate.dtos.mapper.*"/>
+    <imports importedNamespace="com.lunifera.graduate.entities.*"/>
+    <types xsi:type="dto:LAutoInheritDto" name="BaseDto">
+      <annotationInfo xsi:type="dto:LDto"/>
+      <wrappedType href="platform:/resource/com.lunifera.graduate.entities/model/Graduate.entitymodel#/0/@packages.0/@types.0"/>
+    </types>
+  </packages>
+</dto:LDtoModel>
