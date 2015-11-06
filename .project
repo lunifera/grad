@@ -17,7 +17,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1446813515071</id>
+			<id>1446831507210</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
@@ -25,7 +25,15 @@
 				<arguments>
 					<matcher>
 						<id>org.eclipse.ui.ide.multiFilter</id>
+						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.product</arguments>
+					</matcher>
+					<matcher>
+						<id>org.eclipse.ui.ide.multiFilter</id>
 						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.ui</arguments>
+					</matcher>
+					<matcher>
+						<id>org.eclipse.ui.ide.multiFilter</id>
+						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.ui.application.custom</arguments>
 					</matcher>
 					<matcher>
 						<id>org.eclipse.ui.ide.multiFilter</id>
@@ -33,19 +41,11 @@
 					</matcher>
 					<matcher>
 						<id>org.eclipse.ui.ide.multiFilter</id>
-						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.server</arguments>
-					</matcher>
-					<matcher>
-						<id>org.eclipse.ui.ide.multiFilter</id>
-						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.product</arguments>
-					</matcher>
-					<matcher>
-						<id>org.eclipse.ui.ide.multiFilter</id>
 						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.entities</arguments>
 					</matcher>
 					<matcher>
 						<id>org.eclipse.ui.ide.multiFilter</id>
-						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.ui.application.custom</arguments>
+						<arguments>1.0-projectRelativePath-equals-true-false-com.lunifera.graduate.server</arguments>
 					</matcher>
 				</arguments>
 			</matcher>
