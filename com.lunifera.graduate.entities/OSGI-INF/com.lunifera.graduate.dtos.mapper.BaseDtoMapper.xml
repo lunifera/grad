@@ -12,6 +12,6 @@
 		<property name="forentity.to.entity" type="String" value="com.lunifera.graduate.entities.Base"/>
 		
 		<property name="service.pid" type="String" value="com.lunifera.graduate.dtos.mapper.basedtomapper"/>
-		<reference name="mapperAccess" interface="org.lunifera.dsl.dto.lib.IMapperAccess" 
+		<reference name="bind" interface="org.lunifera.dsl.dto.lib.IMapperAccess" 
 				cardinality="1..1" policy="static" bind="bindMapperAccess" unbind="unbindMapperAccess"/>
 </scr:component>

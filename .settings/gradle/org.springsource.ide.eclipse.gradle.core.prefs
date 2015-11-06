@@ -1,0 +1,5 @@
+#org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
+#Fri Nov 06 13:38:35 CET 2015
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;com.lunifera.graduate.entities;com.lunifera.graduate.product;com.lunifera.graduate.server;com.lunifera.graduate.ui;com.lunifera.graduate.ui.application;com.lunifera.graduate.ui.application.custom;
+org.springsource.ide.eclipse.gradle.linkedresources=
+org.springsource.ide.eclipse.gradle.rootprojectloc=
