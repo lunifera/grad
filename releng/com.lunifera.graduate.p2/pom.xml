@@ -1,0 +1,156 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lunifera.graduate</groupId>
+		<artifactId>com.lunifera.graduate</artifactId>
+		<version>0.9.1-SNAPSHOT</version>
+		<relativePath>../../</relativePath>
+	</parent>
+
+	<artifactId>com.lunifera.graduate.p2</artifactId>
+	<packaging>eclipse-repository</packaging>
+
+	<name>P2-Repository for Lunifera Graduate</name>
+	<description>P2-Repository for Lunifera Graduate</description>
+
+	<repositories>
+		<repository>
+			<id>lunifera-nexus-snapshots</id>
+			<name>Lunifera Nexus Snapshots</name>
+			<url>http://maven.lunifera.org:8086/nexus/content/repositories/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>lunifera-nexus-release</id>
+			<name>Lunifera Nexus Release</name>
+			<url>http://maven.lunifera.org:8086/nexus/content/repositories/releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>lunifera-snapshots</id>
+			<url>http://lun.lunifera.org/downloads/p2/lunifera/luna/latest/</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>vaaclipse-snapshots</id>
+			<url>http://lun.lunifera.org/downloads/vaaclipse/p2/lunifera/luna/latest/</url>
+			<layout>p2</layout>
+		</repository>
+	</repositories>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<configuration>
+					<filters>
+<!-- 						<filter> -->
+<!-- 							<type>eclipse-plugin</type> -->
+<!-- 							<id>org.eclipse.emf.mwe2.launch</id> -->
+<!-- 							<removeAll /> -->
+<!-- 						</filter> -->
+					</filters>
+					<resolver>p2</resolver>
+					<pomDependencies>consider</pomDependencies>
+					<environments>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>build.p2</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<lunifera.build.p2.source.dir>${project.build.directory}/repository</lunifera.build.p2.source.dir>
+				<associate.p2>${lunifera.build.eclipse.platform.p2.url},${orbit-site},${xtext-milestone-p2}</associate.p2>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>verify</phase>
+								<configuration>
+									<quiet>true</quiet>
+									<target>
+										<ant antfile="build.xml" target="basic.build" dir=".">
+											<property name="lunifera.build.p2.source.dir" value="${lunifera.build.p2.source.dir}" />
+											<property name="associate.sites" value="${associate.p2}" />
+										</ant>
+									</target>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+						<dependencies>
+							<dependency>
+								<groupId>org.apache.ant</groupId>
+								<artifactId>ant</artifactId>
+								<version>1.8.4</version>
+							</dependency>
+							<dependency>
+								<groupId>ant-contrib</groupId>
+								<artifactId>ant-contrib</artifactId>
+								<version>1.0b3</version>
+								<exclusions>
+									<exclusion>
+										<groupId>ant</groupId>
+										<artifactId>ant</artifactId>
+									</exclusion>
+								</exclusions>
+							</dependency>
+							<dependency>
+								<groupId>net.sf.saxon</groupId>
+								<artifactId>Saxon-HE</artifactId>
+								<version>9.4</version>
+							</dependency>
+						</dependencies>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+</project>

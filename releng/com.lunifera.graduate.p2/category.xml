@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.lunifera.samples.carstore.feature" version="0.0.0">
+      <category name="carstore"/>
+   </feature>
+   <feature id="org.lunifera.samples.carstore.feature.source" version="0.0.0">
+      <category name="carstore"/>
+   </feature>
+   <category-def name="carstore" label="carstore"/>
+</site>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension
+         id="GraduateProduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.lunifera.graduate.ui.application"
+            name="GraduateProduct">
+      	 <property
+               name="applicationXMI"
+               value="com.lunifera.graduate.ui.application/Application.e4xmi">
+         </property>
+         <property
+               name="applicationWidgetset"
+               value="platform:/plugin/org.semanticsoft.vaaclipse.widgetset.default/VAADIN/widgetsets/org.semanticsoft.vaaclipse.widgetset.DefaultWidgetset">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="vaadin.productionMode"
+               value="false">
+         </property>
+         <property
+               name="vaadin.disable-xsrf-protection"
+               value="true">
+         </property>
+         <property
+               name="cssTheme"
+               value="reindeer">
+         </property>
+         <property
+               name="appName"
+               value="GraduateProduct">
+         </property>
+      </product>
+   </extension>
+</plugin>

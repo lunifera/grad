@@ -1,15 +1,15 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Application
+Bundle-Name: Graduate Application
 Bundle-SymbolicName: com.lunifera.graduate.ui.application;singleton:=true
-Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: LUNIFERA
+Bundle-Version: 0.9.1.qualifier
+Bundle-Vendor: Lunifera GmbH
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: com.vaadin.server;bundle-version="7.5.7",
  com.vaadin.shared;bundle-version="7.5.7",
  javax.persistence;bundle-version="2.1.0",
- com.lunifera.graduate.entities;bundle-version="1.0.0",
- com.lunifera.graduate.ui;bundle-version="1.0.0",
+ com.lunifera.graduate.entities;bundle-version="0.9.1",
+ com.lunifera.graduate.ui;bundle-version="0.9.1",
  org.lunifera.dependencies.bundle.vaadin.addon.jpacontainer;bundle-version="3.0.0",
  javax.servlet;bundle-version="3.0.0",
  org.jsoup;bundle-version="1.7.2",

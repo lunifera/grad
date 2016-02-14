@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Entities
+Bundle-Name: JPA Entities for Graduate
 Bundle-SymbolicName: com.lunifera.graduate.entities
-Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: LUNIFERA
+Bundle-Version: 0.9.1.qualifier
+Bundle-Vendor: Lunifera GmbH
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.lunifera.runtime.common;bundle-version="0.9.1";resolution:=optional,
  javax.persistence;bundle-version="2.1.0",

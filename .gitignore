@@ -16,3 +16,4 @@ hs_err_pid*
 
 .gradle
 .launch
+*.java._trace

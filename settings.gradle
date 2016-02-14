@@ -1,6 +1,0 @@
-include 'com.lunifera.graduate.entities'
-include 'com.lunifera.graduate.product'
-include 'com.lunifera.graduate.server'
-include 'com.lunifera.graduate.ui'
-include 'com.lunifera.graduate.ui.application'
-include 'com.lunifera.graduate.ui.application.custom'

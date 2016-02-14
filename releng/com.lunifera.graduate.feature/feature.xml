@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.lunifera.graduate.feature"
+      label="Feature for Graduate"
+      version="0.9.1.qualifier"
+      provider-name="Lunifera GmbH">
+
+   <description>
+      An SDK feature for carstore -- do not install
+   </description>
+
+   <copyright>
+      MyCompany
+   </copyright>
+
+   <requires>
+      <import feature="org.lunifera.idesdk.feature.runtimeonly.allinone" version="0.9.1" match="equivalent"/>
+   </requires>
+
+   <plugin
+         id="com.lunifera.graduate.entities"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.lunifera.graduate.server"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.lunifera.graduate.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.lunifera.graduate.ui.application"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.lunifera.graduate.ui.application.custom"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   
+
+</feature>
