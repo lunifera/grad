@@ -20,31 +20,24 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<configuration>
-					<filters>
-						<filter>
-							<type>eclipse-plugin</type>
-							<id>org.eclipse.emf.mwe2.launch</id>
-							<removeAll />
-						</filter>
-						<filter>
-							<type>eclipse-plugin</type>
-							<id>org.eclipse.ui</id>
-							<removeAll />
-						</filter>
-						<filter>
-							<type>eclipse-plugin</type>
-							<id>org.eclipse.e4.core.services</id>
-							<restrictTo>
-								<versionRange>[1.2.0,2.0.0)</versionRange>
-							</restrictTo>
-						</filter>
-					</filters>
-				</configuration>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.eclipse.tycho</groupId> -->
+<!-- 				<artifactId>target-platform-configuration</artifactId> -->
+<!-- 				<configuration> -->
+<!-- 					<filters> -->
+<!-- 						<filter override="true"> -->
+<!-- 							<type>eclipse-plugin</type> -->
+<!-- 							<id>org.eclipse.emf.mwe2.launch</id> -->
+<!-- 							<removeAll /> -->
+<!-- 						</filter> -->
+<!-- 						<filter override="true"> -->
+<!-- 							<type>eclipse-plugin</type> -->
+<!-- 							<id>org.eclipse.ui</id> -->
+<!-- 							<removeAll /> -->
+<!-- 						</filter> -->
+<!-- 					</filters> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-p2-director-plugin</artifactId>
