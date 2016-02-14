@@ -71,6 +71,11 @@
 			<layout>p2</layout>
 		</repository>
 		<repository>
+			<id>osbee-snapshots</id>
+			<url>http://download.osbee.org/downloads/p2/osbee-master-clean/luna/latest/</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
 			<id>vaaclipse-snapshots</id>
 			<url>http://lun.lunifera.org/downloads/vaaclipse/p2/lunifera/luna/latest/</url>
 			<layout>p2</layout>
