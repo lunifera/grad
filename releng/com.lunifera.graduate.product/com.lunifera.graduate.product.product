@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="GraduateProduct" uid="com.lunifera.graduate.product.GraduateProduct" id="com.lunifera.graduate.ui.application.GraduateProduct" application="org.lunifera.vaaclipse.addons.app.application" version="1.0.0" useFeatures="false" includeLaunchers="true">
-
+<product name="GraduateProduct" uid="com.lunifera.graduate.product.GraduateProduct" id="com.lunifera.graduate.ui.application.GraduateProduct" application="org.lunifera.vaaclipse.addons.app.application" version="0.9.1" useFeatures="false" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -25,11 +24,9 @@
       </win>
    </launcher>
 
-
    <vm>
       <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</macos>
    </vm>
-
 
    <plugins>
       <plugin id="ca.ecliptical.pde.ds.lib"/>
