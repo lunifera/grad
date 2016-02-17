@@ -128,6 +128,15 @@
 								<arch>x86_64</arch>
 							</environment>
 						</environments>
+						<filters>
+							<filter>
+								<type>eclipse-plugin</type>
+								<id>javax.annotation</id>
+								<restrictTo>
+									<versionRange>[1.1.0,1.2.0)</versionRange>
+								</restrictTo>
+							</filter>
+						</filters>
 					</configuration>
 				</plugin>
 			</plugins>
