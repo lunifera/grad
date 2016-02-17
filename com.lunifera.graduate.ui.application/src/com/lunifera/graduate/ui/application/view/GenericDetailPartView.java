@@ -153,7 +153,9 @@ public class GenericDetailPartView implements EventHandler {
 
 			txn.begin();
 			entity = em.merge(entity);
+			em.flush();
 			txn.commit();
+			em.detach(entity);
 		} catch (Exception e1) {
 			System.out.println(e1);
 			txn.rollback();
@@ -180,7 +182,6 @@ public class GenericDetailPartView implements EventHandler {
 	public void refresh() {
 		entity = em.merge(entity);
 		em.refresh(entity);
-		em.remove(entity);
 		setEntity(entity);
 	}
 
