@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature id="org.lunifera.samples.carstore.feature" version="0.0.0">
-      <category name="carstore"/>
+   <feature id="com.lunifera.graduate.feature" version="0.0.0">
+      <category name="graduate"/>
    </feature>
-   <feature id="org.lunifera.samples.carstore.feature.source" version="0.0.0">
-      <category name="carstore"/>
+   <feature id="com.lunifera.graduate.feature.source" version="0.0.0">
+      <category name="graduate"/>
    </feature>
-   <category-def name="carstore" label="carstore"/>
+   <category-def name="graduate" label="Lunifera Graduate Admin"/>
 </site>

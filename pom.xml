@@ -36,6 +36,7 @@
 		<module>com.lunifera.graduate.ui</module>
 		<module>com.lunifera.graduate.ui.application</module>
 		<module>com.lunifera.graduate.ui.application.custom</module>
+		<module>com.lunifera.graduate.widgetset</module>
 		<module>releng/com.lunifera.graduate.feature</module>
 		<module>releng/com.lunifera.graduate.p2</module>
 		<module>releng/com.lunifera.graduate.product</module>

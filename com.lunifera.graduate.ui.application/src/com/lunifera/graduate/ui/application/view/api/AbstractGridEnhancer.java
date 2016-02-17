@@ -6,6 +6,8 @@ import java.util.Map;
 
 import javax.persistence.Entity;
 
+import org.vaadin.gridutil.renderer.BooleanRenderer;
+
 import com.lunifera.graduate.ui.converter.EntityConverterProvider;
 import com.lunifera.graduate.ui.converter.EntityToHtmlConverter;
 import com.lunifera.graduate.ui.fields.CustomGridEditorFieldGroupFieldFactory;
@@ -29,7 +31,7 @@ public abstract class AbstractGridEnhancer<ENTITY> implements
 
 		// set the editorFieldFactory
 		grid.setEditorFieldFactory(CustomGridEditorFieldGroupFieldFactory.get());
-		
+
 		createHiddenColumns(getHiddenColumns(), entityClass, grid);
 		createColumnsOrder(getColumnsOrder(), entityClass, grid);
 		createColumnGroups(getColumnGroups(), entityClass, grid);
@@ -40,7 +42,7 @@ public abstract class AbstractGridEnhancer<ENTITY> implements
 	public void enhanceContainer(JPAContainer<ENTITY> container) {
 
 		container.setWriteThrough(true);
-		
+
 		removeColumns(container);
 
 		addNestedColumns(container);
@@ -129,8 +131,7 @@ public abstract class AbstractGridEnhancer<ENTITY> implements
 		for (Column column : grid.getColumns()) {
 			Class<?> propertyType = container.getType(column.getPropertyId());
 			if (Boolean.class.isAssignableFrom(propertyType)) {
-				// TODO Graduate enable me later
-				// column.setRenderer(new BooleanRenderer());
+				column.setRenderer(new BooleanRenderer());
 			} else {
 				EntityToHtmlConverter<?> converter = EntityConverterProvider
 						.getConverterFor(propertyType);

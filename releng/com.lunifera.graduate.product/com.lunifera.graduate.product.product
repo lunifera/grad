@@ -9,7 +9,7 @@
    <launcherArgs>
       <programArgs>-consoleLog -console
       </programArgs>
-      <vmArgs>-Xms512m -Xmx4048m -Dorg.lunifera.ecview.jetty.contextpath=/carstore -Dorg.lunifera.ecview.jetty.port=8084 -Dorg.eclipse.gemini.refreshBundles=FALSE
+      <vmArgs>-Xms512m -Xmx4048m -Dorg.lunifera.ecview.jetty.contextpath=/graduation -Dorg.lunifera.ecview.jetty.port=8084 -Dorg.eclipse.gemini.refreshBundles=FALSE
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
@@ -180,6 +180,7 @@
       <plugin id="org.eclipse.xtext.xbase.lib"/>
       <plugin id="org.json"/>
       <plugin id="org.jsoup"/>
+      <plugin id="org.lunifera.ecview.jetty.manager"/>
       <plugin id="org.lunifera.runtime.common"/>
       <plugin id="org.lunifera.runtime.jsr303.validation"/>
       <plugin id="org.lunifera.runtime.logback.fragment" fragment="true"/>
@@ -224,6 +225,7 @@
       <plugin id="org.eclipse.gemini.dbaccess.derby" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.osgi" autoStart="true" startLevel="-1" />
       <plugin id="org.eclipse.persistence.core" autoStart="true" startLevel="3" />
+      <plugin id="org.lunifera.ecview.jetty.manager" autoStart="true" startLevel="3" />
       <plugin id="org.lunifera.runtime.jsr303.validation" autoStart="true" startLevel="3" />
    </configurations>
 

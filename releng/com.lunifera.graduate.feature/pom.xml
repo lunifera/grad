@@ -7,13 +7,13 @@
 		<version>0.9.1-SNAPSHOT</version>
 		<relativePath>../../</relativePath>
 	</parent>
-	
+
 	<artifactId>com.lunifera.graduate.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
-	
+
 	<name>Feature for Lunifera Graduate</name>
 	<description>Feature for Lunifera Graduate</description>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -29,9 +29,13 @@
 						</goals>
 						<configuration>
 							<plugins>
-								<plugin id="com.lunifera.graduate.entities" versionRange="0.0.0" />
-								<plugin id="com.lunifera.graduate.server" versionRange="0.0.0" />
-								<plugin id="com.lunifera.graduate.ui" versionRange="0.0.0" />								<plugin id="com.lunifera.graduate.ui.application" versionRange="0.0.0" />								<plugin id="com.lunifera.graduate.ui.application.custom" versionRange="0.0.0" />
+<!-- 								<plugin id="com.lunifera.graduate.entities" versionRange="0.0.0" /> -->
+<!-- 								<plugin id="com.lunifera.graduate.server" versionRange="0.0.0" /> -->
+<!-- 								<plugin id="com.lunifera.graduate.ui" versionRange="0.0.0" /> -->
+<!-- 								<plugin id="com.lunifera.graduate.ui.application" -->
+<!-- 									versionRange="0.0.0" /> -->
+<!-- 								<plugin id="com.lunifera.graduate.ui.application.custom" -->
+<!-- 									versionRange="0.0.0" /> -->
 							</plugins>
 							<excludes>
 							</excludes>

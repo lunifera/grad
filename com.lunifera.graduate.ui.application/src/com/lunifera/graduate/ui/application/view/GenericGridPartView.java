@@ -19,6 +19,7 @@ import org.osgi.framework.ServiceReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.lunifera.graduate.ui.application.annotations.Refresh;
 import com.lunifera.graduate.ui.application.view.api.IConstants;
 import com.lunifera.graduate.ui.application.view.api.IGridViewEnhancer;
 import com.lunifera.graduate.ui.fields.filter.GridCellFilter;
@@ -73,9 +74,9 @@ public class GenericGridPartView {
 
 		parentLayout.setMargin(true);
 
-		Button b = new Button("refresh");
-		parentLayout.addComponent(b);
-		b.addClickListener(e -> container.refresh());
+//		Button b = new Button("refresh");
+//		parentLayout.addComponent(b);
+//		b.addClickListener(e -> container.refresh());
 
 		grid = new Grid();
 		grid.setSizeFull();
@@ -99,6 +100,11 @@ public class GenericGridPartView {
 		enhanceGrid();
 
 		grid.addSelectionListener(e -> entitySelected(e));
+	}
+
+	@Refresh
+	protected void refresh() {
+		container.refresh();
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })

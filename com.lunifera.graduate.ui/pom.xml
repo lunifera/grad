@@ -13,6 +13,14 @@
 
 	<name>UI for Lunifera Graduate</name>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.lunifera.dependencies</groupId>
+			<artifactId>org.lunifera.dependencies.bundle.vaadin.addon.jpacontainer</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<plugins>
 		</plugins>

@@ -135,8 +135,14 @@ public class GenericDetailPartView implements EventHandler {
 	}
 
 	protected void setEntity(Object entity) {
-		BeanItem<Object> beanItem = new BeanItem<Object>(entity);
-		fieldGroup.setItemDataSource(beanItem);
+		parentLayout.getUI().accessSynchronously(new Runnable() {
+			@Override
+			public void run() {
+				BeanItem<Object> beanItem = new BeanItem<Object>(entity);
+				fieldGroup.setItemDataSource(beanItem);
+			}
+		});
+	
 	}
 
 	@Persist
@@ -172,7 +178,9 @@ public class GenericDetailPartView implements EventHandler {
 
 	@Refresh
 	public void refresh() {
+		entity = em.merge(entity);
 		em.refresh(entity);
+		em.remove(entity);
 		setEntity(entity);
 	}
 

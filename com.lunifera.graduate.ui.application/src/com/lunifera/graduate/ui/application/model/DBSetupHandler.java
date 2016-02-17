@@ -46,23 +46,51 @@ public class DBSetupHandler {
 
 	protected void createPersons(EntityManager em) {
 
-		s1 = new Student();
-		s1.setLfp(index++);
-		s1.setTitle(titleDr);
-		s1.setBirthCountry(austria);
-		s1.setBirthday(createBirthdate(14, 10, 1978));
-		s1.setBirthName("Pirchner " + index);
-		s1.setBirthPlace("Innsbruck");
-		s1.setCellPhone("+43 650 9998877");
-		s1.setFinalDegree(drMedVet);
+		String[] firstNames = new String[] { "Florian", "Klemens", "Bernhard",
+				"Lars", "Susanne", "Jörg" };
+		String[] lastNames = new String[] { "Pirchner", "Edler", "Schuster",
+				"Vogel", "Riegel" };
+		String[] cities = new String[] { "Innsbruck", "Wien", "Maurach",
+				"Neunkirchen", "Unterstinkenbrunn" };
+		String[] streets = new String[] { "Wagramer Straße", "Seestadtstraße",
+				"Am Stein", "Ebener Straße", "Bergisel" };
+		String[] postcodes = new String[] { "6212", "2880", "1220", "2640",
+				"1010" };
 
-		Address homeAddress = new Address();
-		homeAddress.setCity("Wien");
-		s1.setHomeAddress(homeAddress);
-		Address semesterAddress = new Address();
-		semesterAddress.setCity("Wien");
-		s1.setSemesterAddress(semesterAddress);
-		em.persist(s1);
+		for (int i = 1; i < 25; i++) {
+			s1 = new Student();
+			s1.setLfp(index++);
+			s1.setTitle(titleDr);
+			s1.setBirthCountry(austria);
+			s1.setBirthday(createBirthdate((int) (Math.random() * 28 + 1),
+					(int) (Math.random() * 12 + 1),
+					(int) (Math.random() * 25 + 1970)));
+			s1.setFirstName(firstNames[(int) (Math.random() * firstNames.length)]);
+			s1.setLastName(lastNames[(int) (Math.random() * lastNames.length)]);
+			s1.setBirthName(lastNames[(int) (Math.random() * lastNames.length)]);
+			s1.setBirthPlace(cities[(int) (Math.random() * cities.length)]);
+			s1.setCellPhone("+43 650 999" + (int) (Math.random() * 9999));
+			s1.setFinalDegree(drMedVet);
+
+			Address homeAddress = new Address();
+			homeAddress.setCity(cities[(int) (Math.random() * cities.length)]);
+			homeAddress
+					.setStreet(streets[(int) (Math.random() * streets.length)]
+							+ " " + (int) (Math.random() * 99));
+			homeAddress
+					.setPostalcode(postcodes[(int) (Math.random() * postcodes.length)]);
+			s1.setHomeAddress(homeAddress);
+			Address semesterAddress = new Address();
+			semesterAddress
+					.setCity(cities[(int) (Math.random() * cities.length)]);
+			semesterAddress
+					.setStreet(streets[(int) (Math.random() * streets.length)]
+							+ " " + (int) (Math.random() * 99));
+			semesterAddress
+					.setPostalcode(postcodes[(int) (Math.random() * postcodes.length)]);
+			s1.setSemesterAddress(semesterAddress);
+			em.persist(s1);
+		}
 	}
 
 	protected void createTitles(EntityManager em) {
@@ -98,8 +126,9 @@ public class DBSetupHandler {
 	}
 
 	private Date createBirthdate(int day, int month, int year) {
-		Calendar.getInstance().set(year, month, day);
-		return Calendar.getInstance().getTime();
+		Calendar cal = Calendar.getInstance();
+		cal.set(year, month, day);
+		return cal.getTime();
 	}
 
 	private void createCountries(EntityManager em) {

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Widgetset
+Bundle-SymbolicName: com.lunifera.graduate.widgetset
+Bundle-Version: 0.9.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Vaadin-Resources: resources
+Require-Bundle: com.vaadin.server;bundle-version="[7.6.2,7.7.0)",
+ com.vaadin.client;bundle-version="[7.6.2,7.7.0)",
+ com.vaadin.shared;bundle-version="[7.6.2,7.7.0)",
+ org.json;bundle-version="0.0.20080701",
+ org.jsoup;bundle-version="1.7.2"
+Import-Package: org.lunifera.runtime.web.vaadin.components.widget

@@ -5,8 +5,8 @@ Bundle-SymbolicName: com.lunifera.graduate.ui.application.custom
 Bundle-Version: 0.9.1.qualifier
 Bundle-Vendor: Lunifera GmbH
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: com.vaadin.server;bundle-version="7.5.7",
- com.vaadin.shared;bundle-version="7.5.7",
+Require-Bundle: com.vaadin.server;bundle-version="7.6.2",
+ com.vaadin.shared;bundle-version="7.6.2",
  javax.persistence;bundle-version="2.1.0",
  com.lunifera.graduate.entities;bundle-version="0.9.1",
  com.lunifera.graduate.ui;bundle-version="0.9.1",
@@ -26,3 +26,4 @@ Import-Package: org.osgi.framework;version="1.8.0",
  org.osgi.service.event;version="1.2.0",
  org.slf4j;version="1.7.2"
 Service-Component: OSGI-INF/*.xml
+Bundle-ActivationPolicy: lazy

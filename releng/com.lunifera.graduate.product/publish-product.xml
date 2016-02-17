@@ -6,7 +6,7 @@
 		<copy todir="${product.targetFolder}">
 			<fileset dir="${basedir}/target/products/">
 				<include name="*.zip" />
-				<exclude name="org.lunifera.samples.carstore.product.CarstoreProduct/**" />
+				<exclude name="com.lunifera.graduate.product.GraduateProduct/**" />
 			</fileset>
 		</copy>
 	</target>

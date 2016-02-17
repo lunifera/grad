@@ -22,7 +22,7 @@ import org.osgi.service.jndi.JNDIConstants;
 public class DatasourceComponent {
 
 	private static final String DERBY_JDBC_EMBEDDED_DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
-	private static final String DBNAME_CARSTORE_CARSTORE = "graduate";
+	private static final String DBNAME_GRADUATE = "graduate";
 	private static final String GRADUATE_DS = "GraduateDs";
 
 	private DataSourceFactory dsf;
@@ -48,9 +48,9 @@ public class DatasourceComponent {
 		try {
 			Properties dsProps = new Properties();
 			dsProps.put(DataSourceFactory.JDBC_DATABASE_NAME,
-					DBNAME_CARSTORE_CARSTORE);
+					DBNAME_GRADUATE);
 			dsProps.put(DataSourceFactory.JDBC_URL,
-					"jdbc:derby:carstore;create=true");
+					"jdbc:derby:graduate;create=true");
 			dsProps.put(DataSourceFactory.OSGI_JDBC_DRIVER_CLASS,
 					DERBY_JDBC_EMBEDDED_DRIVER);
 			dsProps.put(DataSourceFactory.JDBC_USER, "app");
@@ -59,9 +59,9 @@ public class DatasourceComponent {
 
 			dsProps = new Properties();
 			dsProps.put(DataSourceFactory.JDBC_DATABASE_NAME,
-					DBNAME_CARSTORE_CARSTORE);
+					DBNAME_GRADUATE);
 			dsProps.put(DataSourceFactory.JDBC_URL,
-					"jdbc:derby:carstore;create=true");
+					"jdbc:derby:graduate;create=true");
 			dsProps.put(DataSourceFactory.OSGI_JDBC_DRIVER_CLASS,
 					DERBY_JDBC_EMBEDDED_DRIVER);
 			dsProps.put(DataSourceFactory.JDBC_USER, "app");
