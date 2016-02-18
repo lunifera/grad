@@ -218,6 +218,7 @@
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.gemini.dbaccess.derby" autoStart="true" startLevel="2" />
+      <plugin id="org.lunifera.ecview.jetty.manager" autoStart="true" startLevel="4" />
       <plugin id="org.lunifera.org.eclipse.gemini.jpa" autoStart="true" startLevel="3" />
       <plugin id="org.lunifera.org.eclipse.gemini.naming" autoStart="true" startLevel="1" />
    </configurations>
