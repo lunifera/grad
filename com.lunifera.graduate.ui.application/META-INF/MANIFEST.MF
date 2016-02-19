@@ -27,7 +27,7 @@ Require-Bundle: com.vaadin.server;bundle-version="7.6.2",
  org.vaadin.addons.vaadin-grid-util;bundle-version="1.0.7",
  org.semanticsoft.vaaclipse.publicapi,
  org.eclipse.e4.ui.di,
- org.lunifera.dependencies.bundle.vaadin.addon.charts;bundle-version="3.0.0"
+ org.lunifera.dependencies.bundle.vaadin.addon.charts;bundle-version="3.0.1"
 Import-Package: com.vaadin.addon.charts.model,
  org.osgi.framework;version="1.8.0",
  org.osgi.service.event;version="1.2.0",
