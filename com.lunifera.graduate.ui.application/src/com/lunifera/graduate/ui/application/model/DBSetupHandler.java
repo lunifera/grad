@@ -64,7 +64,8 @@ public class DBSetupHandler {
 		String[] postcodes = new String[] { "6212", "2880", "1220", "2640",
 				"1010" };
 
-		for (int i = 1; i < 25; i++) {
+		// create mock data for DB
+		for (int i = 1; i < 100; i++) {
 			s1 = new Student();
 			s1.setLfp(index++);
 			s1.setTitle(titleDr);
