@@ -10,19 +10,19 @@
             <children xsi:type="advanced:Placeholder" xmi:id="_cbIoQNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.placeholder.0" ref="_ByeN8NS1EeW0fOmUb-fdHw"/>
           </children>
           <children xsi:type="basic:PartSashContainer" xmi:id="_8RKzYKucEeS21pCaYI4ioQ" elementId="" containerData="80">
-            <children xsi:type="basic:PartStack" xmi:id="_9peDEKucEeS21pCaYI4ioQ" elementId="org.lunifera.vaaclipse.addons.application.partstack.top" containerData="60" selectedElement="_Fy8EkKudEeS21pCaYI4ioQ">
+            <children xsi:type="basic:PartStack" xmi:id="_9peDEKucEeS21pCaYI4ioQ" elementId="org.lunifera.vaaclipse.addons.application.partstack.top" containerData="50" selectedElement="_Fy8EkKudEeS21pCaYI4ioQ">
               <tags>org.lunifera.vaaclipse.addons.application.partstack.left</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_Fy8EkKudEeS21pCaYI4ioQ" elementId="com.lunifera.graduate.ui.application.partdescriptor.student" containerData="" ref="_oVSjoNPdEeW0fOmUb-fdHw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_LcvwQNV4EeWXmL4zTyktmw" elementId="com.lunifera.graduate.ui.application.placeholder.auditors" ref="_JJqd8NS1EeW0fOmUb-fdHw"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_tymDUNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.partsashcontainer.1" containerData="40" horizontal="true">
-              <children xsi:type="basic:PartStack" xmi:id="_IflRAKudEeS21pCaYI4ioQ" elementId="org.lunifera.vaaclipse.addons.application.partstack.left" containerData="70" selectedElement="_bzHjgM5VEeSscMz1WjkrfA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_tymDUNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.partsashcontainer.1" containerData="50" horizontal="true">
+              <children xsi:type="basic:PartStack" xmi:id="_IflRAKudEeS21pCaYI4ioQ" elementId="org.lunifera.vaaclipse.addons.application.partstack.left" containerData="60" selectedElement="_bzHjgM5VEeSscMz1WjkrfA">
                 <tags>org.lunifera.vaaclipse.addons.application.partstack.outline</tags>
                 <tags>org.lunifera.vaaclipse.addons.application.partstack.right</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_bzHjgM5VEeSscMz1WjkrfA" elementId="com.lunifera.graduate.ui.application.partdescriptor.studentDetails" containerData="" ref="_o9U0ANPdEeW0fOmUb-fdHw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_z03OINS1EeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.placeholder.3" ref="_KnnCoNS1EeW0fOmUb-fdHw"/>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_yPDnkNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.partstack.right" containerData="30" selectedElement="_3F728NStEeW0fOmUb-fdHw">
+              <children xsi:type="basic:PartStack" xmi:id="_yPDnkNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.partstack.right" containerData="40" selectedElement="_3F728NStEeW0fOmUb-fdHw">
                 <children xsi:type="advanced:Placeholder" xmi:id="_8H9swNS1EeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.placeholder.4" ref="_Ofdd8NS1EeW0fOmUb-fdHw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_3F728NStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.placeholder.1" ref="_z_sewNStEeW0fOmUb-fdHw"/>
               </children>
