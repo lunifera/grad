@@ -10,12 +10,8 @@
    </description>
 
    <copyright>
-      MyCompany
+      Lunifera GmbH
    </copyright>
-
-   <requires>
-      <import feature="org.lunifera.idesdk.feature.runtimeonly.allinone" version="0.9.1" match="equivalent"/>
-   </requires>
 
    <plugin
          id="com.lunifera.graduate.entities"

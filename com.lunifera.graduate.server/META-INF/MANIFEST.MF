@@ -4,7 +4,8 @@ Bundle-Name: Graduate Server
 Bundle-SymbolicName: com.lunifera.graduate.server
 Bundle-Version: 0.9.1.qualifier
 Bundle-Vendor: Lunifera GmbH
-Require-Bundle: org.eclipse.core.runtime;bundle-version="3.10.0"
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.10.0",
+ javax.persistence
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Import-Package: org.osgi.framework;version="1.8.0",
@@ -13,4 +14,5 @@ Import-Package: org.osgi.framework;version="1.8.0",
  org.osgi.service.http;version="1.2.1",
  org.osgi.service.jdbc;version="1.0.0",
  org.osgi.service.jndi;version="1.0.0"
-Service-Component: OSGI-INF/com.lunifera.graduate.bootstrap.DatasourceComponent.xml
+Service-Component: OSGI-INF/com.lunifera.graduate.bootstrap.DatasourceComponent.xml,
+ OSGI-INF/com.lunifera.graduate.bootstrap.EntityManagerSetup.xml

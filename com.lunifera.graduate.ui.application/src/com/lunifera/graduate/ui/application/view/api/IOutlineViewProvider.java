@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2015 - 2016, Lunifera GmbH (Wien)
+ * All rights reserved. 
+ *
+ * Contributors:
+ *         Florian Pirchner - Initial implementation
+ */
 package com.lunifera.graduate.ui.application.view.api;
 
 import org.eclipse.e4.ui.model.application.ui.basic.MPart;
