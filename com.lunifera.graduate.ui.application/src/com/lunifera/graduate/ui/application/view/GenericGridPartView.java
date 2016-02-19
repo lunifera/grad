@@ -27,7 +27,6 @@ import com.lunifera.graduate.ui.util.Util;
 import com.vaadin.addon.jpacontainer.JPAContainer;
 import com.vaadin.addon.jpacontainer.JPAContainerFactory;
 import com.vaadin.event.SelectionEvent;
-import com.vaadin.ui.Button;
 import com.vaadin.ui.Grid;
 import com.vaadin.ui.Grid.SingleSelectionModel;
 import com.vaadin.ui.VerticalLayout;
@@ -74,9 +73,9 @@ public class GenericGridPartView {
 
 		parentLayout.setMargin(true);
 
-//		Button b = new Button("refresh");
-//		parentLayout.addComponent(b);
-//		b.addClickListener(e -> container.refresh());
+		// Button b = new Button("refresh");
+		// parentLayout.addComponent(b);
+		// b.addClickListener(e -> container.refresh());
 
 		grid = new Grid();
 		grid.setSizeFull();
@@ -164,7 +163,11 @@ public class GenericGridPartView {
 		}
 		Object entity = container.getItem(model.getSelectedRow()).getEntity();
 
+		// sync detail view
 		eventBroker.post(eventTopic, entity);
+
+		// notify all other interested parties
+		eventBroker.post(IConstants.TOPIC__SELECTION_GRID, entity);
 	}
 
 	protected void initialize() {

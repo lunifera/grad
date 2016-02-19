@@ -11,6 +11,8 @@
 
 	<inherits name="org.lunifera.runtime.web.vaadin.components.widget.LuniferaWidgetsWidgetset" />
 
+	<inherits name="com.vaadin.addon.charts.Widgetset" />
+
 	<inherits name="org.vaadin.gridutil.WidgetSet" />
 
 	<!-- // Enable for super dev mode -->

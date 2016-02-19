@@ -22,7 +22,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_bzHjgM5VEeSscMz1WjkrfA" elementId="com.lunifera.graduate.ui.application.partdescriptor.studentDetails" containerData="" ref="_o9U0ANPdEeW0fOmUb-fdHw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_z03OINS1EeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.placeholder.3" ref="_KnnCoNS1EeW0fOmUb-fdHw"/>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_yPDnkNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.partstack.right" containerData="30" selectedElement="_8H9swNS1EeW0fOmUb-fdHw">
+              <children xsi:type="basic:PartStack" xmi:id="_yPDnkNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.partstack.right" containerData="30" selectedElement="_3F728NStEeW0fOmUb-fdHw">
                 <children xsi:type="advanced:Placeholder" xmi:id="_8H9swNS1EeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.placeholder.4" ref="_Ofdd8NS1EeW0fOmUb-fdHw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_3F728NStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.placeholder.1" ref="_z_sewNStEeW0fOmUb-fdHw"/>
               </children>
@@ -61,7 +61,7 @@
         <children xsi:type="menu:HandledToolItem" xmi:id="_XTc_8NSxEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.handledtoolitem.save" label="Save" iconURI="platform:/plugin/com.lunifera.graduate.ui/icons/flags/floppy_disk.png" command="_2L4gANPdEeW0fOmUb-fdHw"/>
       </toolbar>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_z_sewNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.part.publications" label="Publications" iconURI="platform:/plugin/com.lunifera.graduate.ui/icons/flags/folder.png" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_z_sewNStEeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.part.publications" contributionURI="bundleclass://com.lunifera.graduate.ui.application/com.lunifera.graduate.ui.application.view.ChartsView" label="Exam results" iconURI="platform:/plugin/com.lunifera.graduate.ui/icons/flags/folder.png" closeable="true">
       <persistedState key="entityClass" value="com.lunifera.graduate.entities.Dissertation"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_ByeN8NS1EeW0fOmUb-fdHw" elementId="com.lunifera.graduate.ui.application.part.explorer" contributionURI="bundleclass://com.lunifera.graduate.ui.application/com.lunifera.graduate.ui.application.view.ExplorerView" label="Explorer" iconURI="platform:/plugin/com.lunifera.graduate.ui/icons/lightbulb.png" closeable="true">

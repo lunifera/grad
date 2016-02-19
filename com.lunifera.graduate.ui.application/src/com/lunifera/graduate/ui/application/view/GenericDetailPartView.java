@@ -47,8 +47,6 @@ public class GenericDetailPartView implements EventHandler {
 	@Inject
 	private VerticalLayout parentLayout;
 	@Inject
-	private org.eclipse.e4.core.services.events.IEventBroker e4EventBroker;
-	@Inject
 	private IResourceProvider resourceProvider;
 	@Inject
 	private EPartService partService;
@@ -101,6 +99,7 @@ public class GenericDetailPartView implements EventHandler {
 
 	@PreDestroy
 	public void dispose() {
+		eventBroker.unsubscribe(this);
 		fieldGroup.dispose();
 	}
 
@@ -142,7 +141,7 @@ public class GenericDetailPartView implements EventHandler {
 				fieldGroup.setItemDataSource(beanItem);
 			}
 		});
-	
+
 	}
 
 	@Persist
